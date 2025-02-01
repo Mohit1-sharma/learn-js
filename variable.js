@@ -13,3 +13,4 @@ console.log(typeof booleanisLoggedIn);
 
 console.log(booleanisLoggedIn);
 
+console.log(isLoggedIn);
