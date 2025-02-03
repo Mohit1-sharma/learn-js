@@ -40,4 +40,4 @@ let myObj = {
  console.log(typeof myObj)
  console.log(typeof outsideTemp)
  console.log(typeof heros)
- tbtrhbb
+ 
