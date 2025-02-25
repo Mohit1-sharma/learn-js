@@ -13,3 +13,5 @@ let mytimestamp = Date.now();
 // console.log(mytimestamp);
 
 console.log(Math.floor(Date.now()/1000));
+console.log("1"+5);
+
