@@ -32,18 +32,37 @@ const newArr = myArr.join()
 
 // method SLICE and SPLICE
 
-console.log("A ", myArr);
+//console.log("A ", myArr);
 
 const myn1 = myArr.slice(1,3) // include 1,2 but not 3
 
-console.log(myn1);
+//console.log(myn1);
 
-console.log("B ", myArr);
+//console.log("B ", myArr);
 
 const myn2 = myArr.splice(1,3) 
-console.log("C ", myArr);// include 1,2,and 3 as well
-console.log(myn2);
+//console.log("C ", myArr);// include 1,2,and 3 as well
+//console.log(myn2);
 // in SPLICE orignal array is manipulated
+
+// more into arrays...
+
+const marvel_heros = ["thor","ironman","spiderman"]
+
+const dc_heros = ["superman","flash","batman"]
+//marvel_heros.push(dc_heros)
+
+// console.log(marvel_heros);
+// console.log(marvel_heros[3][1]);
+
+const allHeros= marvel_heros.concat(dc_heros)
+//console.log(allHeros);
+
+const all_new_Heros = [...marvel_heros, ...dc_heros]
+
+//console.log(all_new_Heros);
+
+
 
 
 
