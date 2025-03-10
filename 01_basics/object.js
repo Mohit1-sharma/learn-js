@@ -32,15 +32,38 @@ JsUser.email = "hello@gmail.com"
 //console.log(JsUser);
 
 JsUser.greeting = function(){
-    console.log("Hello Js User");
+    //console.log("Hello Js User");
 
 }
 JsUser.greetingtwo = function(){
-    console.log(`Hello Js User, ${this.name}`);
+    //console.log(`Hello Js User, ${this.name}`);
 
 }
 
 
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingtwo());
+//console.log(JsUser.greeting());
+//console.log(JsUser.greetingtwo());
+
+const course = {
+    coursename: "js in hindi",
+    price : "999",
+    courseInstructor: "hitesh"
+}
+// destructuring object
+const {courseInstructor : inst} = course
+
+console.log(inst);
+
+// {
+//     "name" : "Mohit",
+//     "courseName" : "js in hindi",
+//     "price" : "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
