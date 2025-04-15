@@ -31,4 +31,32 @@ const shoppingCart = [
 ]
 
 const total = shoppingCart.reduce((acc,item) => acc+item.price ,0)
-console.log(total);
+//console.log(total);
+
+
+// high order function..
+function makeTea(typeOfTea){
+    return `maketea:${typeOfTea}`
+}
+
+
+function processTeaOrder(teaFunction) {
+  return  teaFunction("earl grey")
+}
+
+let order = processTeaOrder(makeTea)
+//console.log(order);
+
+
+
+function createTeaMaker(){
+    return function(teaType){
+        return `Making ${teaType}`;
+    }
+}
+
+let teaMaker = createTeaMaker()
+let result = teaMaker("green tea");
+
+console.log(result)
+
