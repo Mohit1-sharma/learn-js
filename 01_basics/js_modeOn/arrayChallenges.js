@@ -23,6 +23,10 @@ const favoriteCity = cities[2];
    Change the second element of the array to `"jasmine tea"`.
 */
 let teaTypes = ["herbel tea", "white tea", "masala chai"];
+ teaTypes[1] ="jasmine tea";
+
+ console.log(teaTypes);
+ 
 
 /* 
 4. Declare an array named `citiesVisited` containing `"Mumbai"` and `"Sydney"`. 
@@ -40,6 +44,8 @@ citiesVisited.push("Berlin");
 
 let teaOrders = ["chai", "iced tea", "matcha", "earl grey"];
 const lastOrder = teaOrders.pop();
+console.log(lastOrder);
+
 
 /* 
 6. You have an array named `popularTeas` containing `"green tea"`, `"oolong tea"`, and `"chai"`. 
@@ -71,7 +77,7 @@ topCities.pop();
 let europeanCities = ["Paris", "Rome"];
 let asianCities = ["Tokyo", "Bangkok"];
 let worldCities = europeanCities.concat(asianCities);
-
+console.log('current output'),
 console.log(worldCities);
 
 /* 
@@ -83,6 +89,8 @@ let teaMenu = ["Masala chai", "oolong tea", "green tea", "earl grey"];
 
 let menuLength = teaMenu.length;
 
+console.log(menuLength)
+
 /* 
 10. You have an array named `cityBucketList` containing `"Kyoto"`, `"London"`, `"Cape Town"`, and `"Vancouver"`. 
     Check if `"London"` is in the array and store the result in a variable named `isLondonInList`.
@@ -91,3 +99,19 @@ let menuLength = teaMenu.length;
 let cityBucketList = ["Kyoto", "London", "Cape Town", "Vancouver"];
 
 let isLondonInList = cityBucketList.includes("London");
+
+console.log(isLondonInList);
+
+
+
+// loop
+
+let arr = ["Paris","New York","Tokyo","London"]
+let cityList = [];
+for (let i = 0; i < arr.length; i++) {
+   const res = arr[i];
+   cityList.push(res)
+   
+}
+
+console.log(cityList);
