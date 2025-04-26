@@ -76,7 +76,7 @@ class employee{
     }
 
     get salary(){
-        return `You are not allowed to see salary` ;
+        return `You are not allowed to see salary`;
     }
 
     set salary(value){
@@ -91,3 +91,54 @@ class employee{
 let emp = new employee("Alice", 50000)
 console.log(emp._salary);
 
+// Encapsulation
+//Restricting the direct access to object data
+
+class bankAccount {
+
+    #balance = 0;
+
+    deposit(amount){
+        this.#balance += amount
+        return this.#balance;
+    }
+
+    getBalance(){
+
+        return `${this.#balance}`;
+    }
+}
+
+let account = new bankAccount()
+console.log(account.getBalance())
+
+
+//class and objects
+
+let car = {
+    make : "Toyota",
+    model: "canry",
+    start : function(){
+        return `${this.make} car got started in ${this.model}`;
+    }
+}
+console.log(car.start())
+
+class vehicle {
+    constructor(make,model){
+        this.make = make
+        this.model = model
+    }
+
+    start(){
+        return `${this.model} is a car from ${this.make}`
+    }
+}
+
+// class car extends vehicle {
+
+//     drive(){
+//         return `${this.make}:This is an inheritance example`;
+//     }
+   
+// }
