@@ -4,4 +4,5 @@
 var age = 19;
 console.log(age)
 age = 20;
-console.log('gdthnrnr');
+console.log(age)
+// today apsara learned something new
